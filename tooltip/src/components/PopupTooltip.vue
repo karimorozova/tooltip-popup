@@ -1,5 +1,5 @@
 <template lang="pug">
-.tooltip Hello
+.tooltip 
     slot
     .tooltiptext(v-if="tooltipText" :class="side" :style="{backgroundColor: backgroundColor, color: color}") {{ tooltipText }}
 </template>

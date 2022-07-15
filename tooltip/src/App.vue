@@ -1,15 +1,17 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <PopupTooltip/>
+<template lang="pug">
+div
+  img(alt="Vue logo" src="./assets/logo.png")
+  IconButton(:popup-text="'Hello friend'" :popupSide="'right'")
+    span K
 </template>
 
 <script>
-import PopupTooltip from './components/PopupTooltip.vue'
+import IconButton from './components/IconButton.vue'
 
 export default {
   name: 'App',
   components: {
-    PopupTooltip
+    IconButton
 }
 }
 </script>
